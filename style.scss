@@ -1,0 +1,53 @@
+div {
+  margin: 40px;
+  ul{
+    color: blue;
+  }
+}
+@media screen and (min-width: 600px) {
+  div {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  div {
+    font-size: 10px;
+  }
+}
+
+%message {
+  font-family: fantasy;
+  border: 4px dotted blue;
+  padding: 20px;
+}
+
+.class1 {
+  @extend %message;
+  background-color: green;
+}
+
+.class2 {
+  @extend %message;
+  background-color: pink;
+  filter: grayscale(50%);
+}
+
+#dog {
+  border: 18px solid yellow;
+  border-radius: 4px;
+  padding: 40px;
+  width: 150px;
+}
+
+.container {
+  background-color: pink;
+}
+
+table, th, td {
+  border: solid black;
+}
+
+table {
+  border-collapse: collapse;
+}
